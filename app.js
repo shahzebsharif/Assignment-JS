@@ -779,8 +779,103 @@ var arr = [[],[]]
 
 // Chapter 17-20 - Task No. 2
 document.write("<br><br>" + "Chapter 17-20 - Task No. 2" + "<br><br>")
-var arr = [ [0,1,1,0], 
-[1,0,0,1], 
-[1,0,0,1], 
-[0,1,1,0]]
 document.write(arr)
+
+// Chapter 17-20 - Task No. 3
+document.write("<br><br>" + "Chapter 17-20 - Task No. 3" + "<br><br>")
+for(i = 1; i <= 10; i++){
+    document.write(i + "<br>")
+}
+
+
+// Chapter 17-20 - Task No. 4
+document.write("<br><br>" + "Chapter 17-20 - Task No. 4" + "<br><br>")
+var tablenum = +prompt("Please Enter Number for what Multiplication Table is Required", "5")
+var tablecount = +prompt("Please Enter Length for what Multiplication Table is Required", "5")
+document.write("Multiplication Table of: " + tablenum + "<br>")
+document.write("Length of Multiplication: " + tablecount + "<br><br>")
+for(i = 1; i < tablecount; i++){
+    document.write(tablenum + " X " + i + " = " + tablenum*i + "<br>")
+}
+
+
+// Chapter 17-20 - Task No. 5
+document.write("<br><br>" + "Chapter 17-20 - Task No. 5" + "<br><br>")
+var fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+for(i=0; i < fruits.length; i++){
+    document.write(fruits[i] + "<br>")
+}
+document.write("<br>")
+for(i=0; i < fruits.length; i++){
+    document.write("Element at index " + i + " is " + fruits[i] + "<br>")
+}
+
+// Chapter 17-20 - Task No. 6
+document.write("<br><br>" + "Chapter 17-20 - Task No. 6" + "<br><br>")
+document.write("Counting: " + "<br><br>")
+for(i=1;i <= 15; i++){
+    document.write(i + ",")
+}
+document.write("<br><br>" + "Reverse Counting: " + "<br><br>")
+for(i=10;i >= 1; i--){
+    document.write(i + ",")
+}
+document.write("<br><br>" + "Even: " + "<br><br>")
+for (let i=1; i<=20; i++) {
+    if(i % 2 === 0) {
+      document.write(i + ",")
+    }
+  }
+
+  document.write("<br><br>" + "Odd: " + "<br><br>")
+for (let i=1; i<20; i++) {
+    if(i % 2 !== 0) {
+      document.write(i + ",")
+    }
+  }
+
+  document.write("<br><br>" + "Series: " + "<br><br>")
+for (let i=1; i<=20; i++) {
+    if(i % 2 === 0) {
+      document.write(i + "k,")
+    }
+  }
+
+  // Chapter 17-20 - Task No. 7
+document.write("<br><br>" + "Chapter 17-20 - Task No. 7" + "<br><br>")
+
+var a = ["cake", "apple pie", "cookie", "chips", "paties"]
+var checkfruit = prompt("Welcome to ABC Bakery, What do you want to order Sir/Ma'am", "chips")
+
+for(let i = 0; i < a.length; i++){
+    if(checkfruit === a[i]){
+        document.write(checkfruit + " is availble at index " + i + " in our bakery")
+    }
+}
+
+ // Chapter 17-20 - Task No. 8
+ document.write("<br><br>" + "Chapter 17-20 - Task No. 8" + "<br><br>")
+
+ var a = [24,53,78,91,12]
+ document.write("Array Items: " + a + "<br>")
+ var b = a.sort()
+ var c = b.length-1
+document.write("The Largest Number is: " + b[c] + "<br>")
+
+// Chapter 17-20 - Task No. 9
+document.write("<br><br>" + "Chapter 17-20 - Task No. 9" + "<br><br>")
+
+var a = [24,53,78,91,12]
+document.write("Array Items: " + a + "<br>")
+var b = a.sort()
+document.write("The Smallest Number is: " + b[0] + "<br>")
+
+
+// Chapter 17-20 - Task No. 10
+document.write("<br><br>" + "Chapter 17-20 - Task No. 10" + "<br><br>")
+
+for (let i=1; i<=100; i++) {
+    if(i % 5 === 0) {
+      document.write(i + ",")
+    }
+  }
