@@ -450,3 +450,97 @@ else{
     document.write("Input Correct Values")
 }
 
+// Chapter 9-11 - Task No. 7
+document.write("<br><br>" + "Chapter 9-11 - Task No. 7" + "<br><br>")
+var secretnum = 5;
+var guessnum = +prompt("Please Guess the Number", "6")
+if(secretnum === guessnum){
+    document.write("Bingo! Correct Answer")
+}
+else if(guessnum === (secretnum+1)){
+    document.write("Close Enough to Correct Answer")
+}
+else{
+    document.write("Better Luck Next Time")
+}
+
+// Chapter 9-11 - Task No. 8
+document.write("<br><br>" + "Chapter 9-11 - Task No. 8" + "<br><br>")
+var userinput = +prompt("Please Enter Number to Check Divisible by 3", "6")
+var verifying = userinput%3
+document.write("Your Number is: " + userinput + "<br>")
+if(verifying === 0){
+    document.write("The Input Number is Divisible by 3")
+}
+else{
+    document.write("The Given Number is not divisible by 3")
+}
+
+
+// Chapter 9-11 - Task No. 9
+document.write("<br><br>" + "Chapter 9-11 - Task No. 8" + "<br><br>")
+var userinput = +prompt("Please Enter Number to Check Even & Odd", "6")
+var verifying = userinput%2
+document.write("Your Number is: " + userinput + "<br>")
+if(verifying === 0){
+    document.write("The Given Number is Even Number")
+}
+else{
+    document.write("The Given Number is Odd Number")
+}
+
+// Chapter 9-11 - Task No. 10
+document.write("<br><br>" + "Chapter 9-11 - Task No. 10" + "<br><br>")
+var inputtemp = +prompt("Please Input Your Temperature","33")
+if(inputtemp > 40){
+    document.write("It is too hot outside")
+}
+else if(inputtemp >= 30 && inputtemp <= 40){
+    document.write("The Weather today is Normal")
+}
+else if(inputtemp >=20 && inputtemp <= 30){
+    document.write("Today's Weather is Cool")
+}
+else if(inputtemp >=10 && inputtemp <= 20){
+    document.write("OMG! Today's Weather is so Cool")
+}
+else{
+    document.write("Please input Correct Temperature")
+}
+
+// Chapter 9-11 - Task No. 11
+document.write("<br><br>" + "Chapter 9-11 - Task No. 11" + "<br><br>")
+var firstnumber = +prompt("Enter First Value", "10")
+var operator = prompt("Please Input Operator i.e. +, -, *, /, %", "+")
+var secondnumber = +prompt("Please Input Second Value", "15")
+var result = 0
+if(operator === "+"){
+    result = firstnumber + secondnumber
+    document.write("Selected Operation is: " + operator + "<br>")
+    document.write("Result: " + result + "<br>")
+
+}
+else if(operator === "-"){
+    result = firstnumber - secondnumber
+    document.write("Selected Operation is: " + operator + "<br>")
+    document.write("Result: " + result + "<br>")
+}
+else if(operator === "/"){
+    result = firstnumber / secondnumber
+    document.write("Selected Operation is: " + operator + "<br>")
+    document.write("Result: " + result + "<br>")
+}
+else if(operator === "*"){
+    result = firstnumber * secondnumber
+    document.write("Selected Operation is: " + operator + "<br>")
+    document.write("Result: " + result + "<br>")
+}
+else if(operator === "%"){
+    result = firstnumber % secondnumber
+    document.write("Selected Operation is: " + operator + "<br>")
+    document.write("Result: " + result + "<br>")
+}
+else{
+    document.write("Please Input Correct Number and Operator")
+}
+
