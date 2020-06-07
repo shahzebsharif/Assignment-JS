@@ -544,3 +544,243 @@ else{
     document.write("Please Input Correct Number and Operator")
 }
 
+// Chapter 12-13 - Task No. 1
+document.write("<br><br>" + "Chapter 12-13 - Task No. 1" + "<br><br>")
+var checking = prompt("Please Input Character to Check", "a")
+var checked = checking.charCodeAt(0)
+
+if(checked >= 97 && checked <= 122){
+    document.write("You Input: " + checking + "<br>")
+    document.write("Given Character is a Lower Case Letter")
+}
+else if(checked >= 65 && checked <= 90){
+    document.write("You Input: " + checking + "<br>")
+    document.write("Given Character is a Upper Case Letter")
+} 
+else if(checked >= 48 && checked <= 57){
+    document.write("You Input: " + checking + "<br>")
+    document.write("Given Character is a Numeric Value")
+}
+else{
+    document.write("Please Input Only Numbers and Alphabets")
+}
+
+// Chapter 12-13 - Task No. 2
+document.write("<br><br>" + "Chapter 12-13 - Task No. 2" + "<br><br>")
+var int1 = +prompt("Please Enter First Integer", "10")
+var int2 = +prompt("Please Input Second Integer", "45")
+
+if(int1 > int2){
+    document.write("First Integer is Larger then Second Integer: " + int1 + "<br>")
+}
+else if(int1 < int2){
+    document.write("Second Integer is Larger then First Integer: " + int2 + "<br>")
+    
+}
+else{
+    document.write("Both Integers are Equal")
+}
+
+// Chapter 12-13 - Task No. 3
+document.write("<br><br>" + "Chapter 12-13 - Task No. 3" + "<br><br>")
+
+var checkint = +prompt("Please Input an Integer")
+if(checkint > 0){
+    document.write("Given Integer is Postive: " + checkint)
+}
+else if(checkint < 0){
+    document.write("Given Integer is Negative: " + checkint)
+}
+else{
+    document.write("Given Integer is Zero")
+}
+
+// Chapter 12-13 - Task No. 4
+document.write("<br><br>" + "Chapter 12-13 - Task No. 1" + "<br><br>")
+var vowel = prompt("Please Input a Character", "s")
+if(vowel[0] === "A" || vowel[0] === "E" || vowel[0] === "I" || vowel[0] === "O" || vowel[0] === "U" || vowel[0] === "a" || vowel[0] === "e" || vowel[0] === "i" || vowel[0] === "o" || vowel[0] === "u"){
+    document.write("Given Character is Vowel")
+}
+else{
+    document.write("Given Character is not Vowel")
+}
+
+// Chapter 12-13 - Task No. 5
+document.write("<br><br>" + "Chapter 12-13 - Task No. 5" + "<br><br>")
+var pass = "abcd"
+var userpass = prompt("Plesae Enter Password", "abcd")
+
+if(userpass === pass){
+    document.write("Correct! The Password you entered matches the Orginal Password")
+}
+else if(userpass != pass){
+    document.write("Incorrect Password")
+}
+else if(userpass.length === 0){
+    document.write("Please Enter Password")
+}
+else{
+    document.write("Bye Bye")
+}
+
+// Chapter 12-13 - Task No. 6
+document.write("<br><br>" + "Chapter 12-13 - Task No. 6" + "<br><br>")
+var hour = 13
+if(hour < 18){
+    document.write("Good Day")
+}
+else{
+    document.write("Good Evening")
+}
+
+// Chapter 12-13 - Task No. 7
+document.write("<br><br>" + "Chapter 12-13 - Task No. 7" + "<br><br>")
+var time = +prompt("Please Enter Time in 24 Hours Format i.e. 1900 = 7 pm", "1900")
+if(time >= 0000 && time < 1200){
+    document.write("Good Morning!")
+}
+else if(time >= 1200 && time < 1700){
+    document.write("Good Afternoon!")
+}
+else if(time >= 1700 && time < 2100){
+    document.write("Good Evening!")
+}
+else if(time >= 2100 && time <= 2359){
+    document.write("Good Night!")
+}
+else{
+    document.write("Please Input Correct Time")
+}
+
+// Chapter 14-16 - Task No. 1
+document.write("<br><br>" + "Chapter 14-16 - Task No. 1" + "<br><br>")
+var arr1 = []
+
+// Chapter 14-16 - Task No. 2
+document.write("<br><br>" + "Chapter 14-16 - Task No. 2" + "<br><br>")
+document.write("Didnt COvered Yet")
+
+// Chapter 14-16 - Task No. 3
+document.write("<br><br>" + "Chapter 14-16 - Task No. 3" + "<br><br>")
+var arr1 = ["ABC", "DEF", "GHI", "JKL"]
+document.write(arr1 + "<br>")
+
+// Chapter 14-16 - Task No. 4
+document.write("<br><br>" + "Chapter 14-16 - Task No. 4" + "<br><br>")
+var arr1 = [123, 456, 789 ]
+document.write(arr1 + "<br>")
+
+// Chapter 14-16 - Task No. 5
+document.write("<br><br>" + "Chapter 14-16 - Task No. 5" + "<br><br>")
+var arr1 = [true, true, false ]
+document.write(arr1 + "<br>")
+
+// Chapter 14-16 - Task No. 6
+document.write("<br><br>" + "Chapter 14-16 - Task No. 6" + "<br><br>")
+var arr1 = [123, "abc", true ]
+document.write(arr1 + "<br>")
+
+// Chapter 14-16 - Task No. 7
+document.write("<br><br>" + "Chapter 14-16 - Task No. 7" + "<br><br>")
+var arr1 = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M", "M.Phil", "PhD"]
+document.write("Qualifications" + "<br>")
+for(i = 0; i < arr1.length ; i++){
+    document.write(i + ")" + " " + arr1[i] + "<br>")
+}
+
+// Chapter 14-16 - Task No. 8
+document.write("<br><br>" + "Chapter 14-16 - Task No. 8" + "<br><br>")
+var arr1 = ["Shahzeb", "Mohsin", "Talha"]
+var arr2 = [457, 490, 432]
+for(i = 0; i < arr1.length; i++){
+    document.write("Score of " + arr1[i] + " is " + arr2[i] + ". Percentage: " + arr2[i]/500*100 + "%" + "<br>")
+}
+
+// Chapter 14-16 - Task No. 9
+document.write("<br><br>" + "Chapter 14-16 - Task No. 9" + "<br><br>")
+
+var arr1 = ["Yellow" , "Black" , "White"]
+document.write(arr1 + "<br><br>")
+var color1 = prompt("Please Enter a Color to Add in the begining", "Pink")
+arr1.unshift(color1)
+document.write("After Adding User Defined Color in the Begining" + "<br>")
+document.write(arr1 + "<br><br>")
+var color2 = prompt("Please Enter a color to Add at the End", "Blue")
+arr1.push(color2)
+document.write("After Adding User Defined Color in the end" + "<br>")
+document.write(arr1 + "<br><br>")
+var color3 = prompt("Please Enter a Color to Add in the begining", "Magenta")
+var color4 = prompt("Please Enter a Color to Add in the begining", "Orange")
+arr1.unshift(color3, color4)
+document.write("After Adding User Defined Color in the Begining" + "<br>")
+document.write(arr1 + "<br><br>")
+arr1.shift()
+document.write("After Deleting First Color" + "<br>")
+document.write(arr1 + "<br><br>")
+arr1.pop()
+document.write("After Deleting Last Color" + "<br>")
+document.write(arr1 + "<br><br>")
+var indexcolor = +prompt("Please Enter Index Number Where to add a Color", 2)
+var color5 = prompt("Please Input Color to Add at the Specified Index No.", "Green")
+arr1.splice(indexcolor, 0, color5)
+document.write("After Adding Color at Specified Index" + "<br>")
+document.write(arr1 + "<br><br>")
+var indexdelete = +prompt("Enter From Where You Want to Delete Colors", "2")
+var deletecount = +prompt("Enter How Many You Want to Delete From the Starting Index?", "1")
+arr1.splice(indexdelete , deletecount)
+document.write("After Deleteing Color at Specified Index" + "<br>")
+document.write(arr1 + "<br><br>")
+
+// Chapter 14-16 - Task No. 10
+document.write("<br><br>" + "Chapter 14-16 - Task No. 10" + "<br><br>")
+
+var students = [320, 230, 480, 120]
+document.write("Score of Students = " + students + "<br>")
+students.sort()
+document.write("Ordered Score of Students = " + students + "<br>")
+
+
+// Chapter 14-16 - Task No. 11
+document.write("<br><br>" + "Chapter 14-16 - Task No. 11" + "<br><br>")
+var cities = ["Karachi", "Islamabad", "Lahore", "Quetta", "Peshawar"]
+document.write("List of Cities: " + cities + "<br>")
+var selectedcities = cities.slice(1,4)
+document.write("List of Selected Cities: " + selectedcities + "<br>")
+
+// Chapter 14-16 - Task No. 12
+document.write("<br><br>" + "Chapter 14-16 - Task No. 12" + "<br><br>")
+var arr3 = ["This" , "is" , "my" , "cat"]
+var sent = arr3.join(" ")
+document.write("Array: " + "<br>" + arr3)
+document.write("<br>" + "String: " + "<br>" + sent)
+
+// Chapter 14-16 - Task No. 13
+document.write("<br><br>" + "Chapter 14-16 - Task No. 13" + "<br><br>")
+
+var compt = ["Keyboard", "Mouse", "Printer", "Monitor"]
+for(i = 0; i < compt.length; i++){
+    document.write("Out: " + "<br>" + compt[i] + "<br>")
+}
+
+// Chapter 14-16 - Task No. 14
+document.write("<br><br>" + "Chapter 14-16 - Task No. 14" + "<br><br>")
+var compt = ["Keyboard", "Mouse", "Printer", "Monitor"]
+for(i = compt.length-1; i >= 0; i--){
+    document.write("Out: " + "<br>" + compt[i] + "<br>")
+}
+
+// Chapter 14-16 - Task No. 15
+document.write("<br><br>" + "Chapter 14-16 - Task No. 15" + "<br><br>")
+document.write("Didn't Studied DOM Yet")
+
+// Chapter 17-20 - Task No. 1
+document.write("<br><br>" + "Chapter 17-20 - Task No. 1" + "<br><br>")
+var arr = [[],[]]
+
+// Chapter 17-20 - Task No. 2
+document.write("<br><br>" + "Chapter 17-20 - Task No. 2" + "<br><br>")
+var arr = [ [0,1,1,0], 
+[1,0,0,1], 
+[1,0,0,1], 
+[0,1,1,0]]
+document.write(arr)
